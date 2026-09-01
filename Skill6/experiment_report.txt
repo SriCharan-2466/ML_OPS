@@ -1,0 +1,85 @@
+
+===========================================================
+CONTAINERIZED MACHINE LEARNING APPLICATION EXPERIMENT
+===========================================================
+
+Application:
+Iris Flower Classification API
+
+Machine Learning Model:
+Random Forest Classifier
+
+Dataset:
+Iris Dataset
+
+API Framework:
+FastAPI
+
+Model File:
+model.pkl
+
+Docker Image:
+iris-ml-api:latest
+
+Application Port:
+8000
+
+Kubernetes Deployment:
+iris-ml-deployment
+
+Kubernetes Replicas:
+2
+
+Kubernetes Service:
+iris-ml-service
+
+Service Type:
+ClusterIP
+
+-----------------------------------------------------------
+IMPLEMENTATION RESULTS
+-----------------------------------------------------------
+
+1. Machine learning model trained successfully.
+2. Model serialized using Joblib.
+3. FastAPI application created successfully.
+4. Root API endpoint tested successfully.
+5. Health endpoint tested successfully.
+6. Prediction endpoint tested successfully.
+7. Dockerfile created successfully.
+8. Docker project structure validated successfully.
+9. Kubernetes Deployment YAML created successfully.
+10. Kubernetes Service YAML created successfully.
+11. Kubernetes configuration validated successfully.
+
+-----------------------------------------------------------
+PREDICTION TEST
+-----------------------------------------------------------
+
+Input:
+[5.1, 3.5, 1.4, 0.2]
+
+Expected class:
+0
+
+Class:
+Iris Setosa
+
+-----------------------------------------------------------
+CONCLUSION
+-----------------------------------------------------------
+
+A machine learning model was developed using the Iris dataset
+and exposed through a FastAPI REST API. A Dockerfile was
+created to containerize the application, and Kubernetes
+Deployment and Service configurations were prepared for
+orchestration.
+
+The hosted Google Colab runtime does not permit the required
+Docker container runtime operations, so actual Docker
+container execution was not performed in the managed runtime.
+
+The Docker and Kubernetes configurations were nevertheless
+created and validated, while the ML API was fully tested
+within the Colab environment.
+===========================================================

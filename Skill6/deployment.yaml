@@ -1,0 +1,27 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-ml-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iris-ml
+  template:
+    metadata:
+      labels:
+        app: iris-ml
+    spec:
+      containers:
+      - name: iris-ml-container
+        image: iris-ml-api:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
